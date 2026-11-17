@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#c2410c" />
+  <title>Page Not Found | GBP Restaurants</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c2410c'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='800' font-size='26' fill='white'%3EGB%3C/text%3E%3C/svg%3E" />
+  <script>
+    // Single Page App routing fallback for GitHub Pages
+    // If a 404 occurs, check if the requested path is a blog article and serve it
+    var path = window.location.pathname;
+    
+    // Define available blog articles
+    var articles = {
+      '/blog/google-business-profile-views-calls/': '/blog/google-business-profile-views-calls.html',
+      '/blog/google-posts-guide/': '/blog/google-posts-guide.html',
+      '/blog/restaurant-reviews-best-practices/': '/blog/restaurant-reviews-best-practices.html',
+      '/blog/restaurant-menu-management/': '/blog/restaurant-menu-management.html',
+      '/blog/local-seo-restaurants-2026/': '/blog/local-seo-restaurants-2026.html',
+      '/blog/': '/blog/index.html'
+    };
+    
+    // If the path matches a known article, redirect to it
+    if (articles[path]) {
+      window.location.href = articles[path];
+    } else if (path.startsWith('/blog/') && !path.endsWith('.html')) {
+      // Redirect blog paths without .html extension
+      window.location.href = path + '.html';
+    } else {
+      // Default to home page for unknown paths
+      window.location.href = '/';
+    }
+  </script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; color: #1c1917; background: #fafaf9; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .container { max-width: 500px; padding: 40px 20px; text-align: center; }
+    h1 { font-size: 2rem; color: #c2410c; margin-bottom: 10px; }
+    p { color: #78716c; margin-bottom: 20px; }
+    a { display: inline-block; padding: 12px 24px; background: #c2410c; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; }
+    a:hover { background: #9a3412; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>404 — Page Not Found</h1>
+    <p>We couldn't find the page you're looking for. Redirecting you now...</p>
+    <p style="font-size: 0.9rem; color: #a8a29e; margin: 30px 0;">If you're not automatically redirected, <a href="/">click here to go home</a>.</p>
+  </div>
+</body>
+</html>
