@@ -1,1 +1,2 @@
 # gbprestaurants
+hyper-niche Google Business Profile management service, built mobile-first with a sticky CTA, accordion FAQ, and tiered monthly retainers. I’ve also included a curated list of domain names below the code.
