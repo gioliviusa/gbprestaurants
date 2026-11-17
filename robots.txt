@@ -1,0 +1,17 @@
+# GBP Restaurants robots.txt
+# Allow all crawlers to index the site
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /api/
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Point to sitemap
+Sitemap: https://gbprestaurants.com/sitemap.xml
