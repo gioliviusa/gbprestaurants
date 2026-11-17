@@ -58,10 +58,34 @@
     "image": "https://gbprestaurants.com/og-image.jpg",
     "description": "Done-for-you Google Business Profile management for restaurants, cafés, bars, and food trucks. Weekly posts, food photos, menu updates, review replies, and Q&A management on a flat monthly retainer.",
     "priceRange": "$297–$697",
-    "areaServed": { "@type": "Country", "name": "United States" },
+    "areaServed": [
+      { "@type": "Country", "name": "United States" },
+      { "@type": "State", "name": "California" },
+      { "@type": "State", "name": "Texas" },
+      { "@type": "State", "name": "New York" },
+      { "@type": "State", "name": "Florida" },
+      { "@type": "State", "name": "Illinois" }
+    ],
     "serviceType": ["Google Business Profile Management","Restaurant Local SEO","Review Management","Google Posts Management","Menu Accuracy Management"],
     "sameAs": ["https://twitter.com/gbprestaurants","https://www.linkedin.com/company/gbprestaurants"],
-    "contactPoint": { "@type": "ContactPoint", "contactType": "sales", "email": "hello@gbprestaurants.com", "availableLanguage": ["English"] },
+    "telephone": "+1-888-GBP-REST",
+    "contactPoint": { "@type": "ContactPoint", "contactType": "sales", "email": "hello@gbprestaurants.com", "telephone": "+1-888-GBP-REST", "availableLanguage": ["English"] },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:00",
+        "disambiguatingDescription": "Business hours (EST)"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "16:00",
+        "disambiguatingDescription": "Weekend hours (EST)"
+      }
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Google Business Profile Management Plans",
@@ -70,7 +94,88 @@
         { "@type": "Offer", "name": "Standard Plan", "description": "3 Google Posts per week, review replies within 24h, bi-weekly photo updates, full menu updates, Q&A monitoring, competitor snapshot, monthly insights report.", "price": "497", "priceCurrency": "USD", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "497", "priceCurrency": "USD", "unitText": "MONTH" } },
         { "@type": "Offer", "name": "Advanced Plan", "description": "Daily Google Posts, same-day review replies, weekly photo updates, full menu and holiday hours management, full Q&A management, competitor deep-dive, monthly strategy call, monthly insights report.", "price": "697", "priceCurrency": "USD", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "697", "priceCurrency": "USD", "unitText": "MONTH" } }
       ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "3",
+      "description": "GBP Restaurants customer testimonials - rated 5/5 by restaurant owners"
     }
+  }
+  </script>
+
+  <!-- ===== JSON-LD: LOCAL BUSINESS ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://gbprestaurants.com/#localbusiness",
+    "name": "GBP Restaurants",
+    "description": "Done-for-you Google Business Profile management for restaurants, cafés, bars, and food trucks nationwide.",
+    "url": "https://gbprestaurants.com/",
+    "image": "https://gbprestaurants.com/logo.png",
+    "telephone": "+1-888-GBP-REST",
+    "email": "hello@gbprestaurants.com",
+    "areaServed": [
+      { "@type": "State", "name": "California" },
+      { "@type": "State", "name": "Texas" },
+      { "@type": "State", "name": "New York" },
+      { "@type": "State", "name": "Florida" },
+      { "@type": "State", "name": "Illinois" },
+      { "@type": "State", "name": "Pennsylvania" },
+      { "@type": "State", "name": "Ohio" },
+      { "@type": "State", "name": "Georgia" },
+      { "@type": "State", "name": "North Carolina" },
+      { "@type": "State", "name": "Arizona" }
+    ],
+    "serviceType": "Google Business Profile Management",
+    "priceRange": "$297–$697",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "16:00"
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "email": "hello@gbprestaurants.com",
+      "telephone": "+1-888-GBP-REST",
+      "availableLanguage": ["English"]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "3",
+      "description": "5-star rated by restaurant clients"
+    }
+  }
+  </script>
+
+  <!-- ===== JSON-LD: AGGREGATE RATING FOR SERVICE ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AggregateRating",
+    "@id": "https://gbprestaurants.com/#aggregate-rating",
+    "ratingValue": "5",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "3",
+    "reviewCount": "3",
+    "name": "GBP Restaurants Service Quality"
   }
   </script>
 
